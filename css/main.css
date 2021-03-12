@@ -1,5 +1,6 @@
 html{
 	font-size: 16px;
+	
 }
 
 body {
@@ -8,9 +9,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: 1em;
-	flex-flow: row wrap;
-	flex-basis: mid-width;
-	align-content: flex-start;
+	flex-direction: row;
+	
+		
 	
 	
 	
@@ -24,11 +25,7 @@ body {
 	max-width: 1200px;
 	width: 90%;
 	flex-flow: row wrap;
-	flex-basis: mid-width;
-	align-content: flex-start;
 	
-
-
 	
 
 }
@@ -43,6 +40,7 @@ h3 {
 /* font-size  h1 30px, h2 18px, h3 12px, p 14px*/
 h1 {
 	font-size: 1.875em;
+	
 }
 h2 {
 	font-size: 1.125em;
@@ -64,32 +62,40 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	flex-basis: mid-width;
-	align-content: flex-start;
+	flex-basis: 100%;
+	
+	flex-direction: row;
+	
+	
+	
 	
 }
-/* removed float: left and margin: 0*/
+/* removed float: left and margin: 0* , h1 padding: 38px 0*/
+
 header h1 {
-	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
+	
 }
 header h1 span {
 	color: #77a466;
 }
-/* removed float:right*/
+
+
+/* removed float:right  h nav padding: 46px 0,*/
 header nav {
 	padding: 46px 0;
 }
-/*removed margin: 0*/
+/*removed margin: 0,h nav ul padding:0*/
 header nav ul {
+	list-style: none;
 	padding: 0;
-
 }
-/* font-size 14px romoved display:inline*/
+/* font-size 14px romoved display:inline h nav ul li padding: 0 10px*/
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
+	padding: 0 10px
 	
 
 	
@@ -98,6 +104,8 @@ header nav ul li {
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	line-height: 3em;
+	
 }
 
 /*The widths are in a percentage! rmoved margin 0 auto and clear: both*/
@@ -107,14 +115,12 @@ header nav ul li a{
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	flex-basis: mid-width;
+	flex-basis: 100%;
 	align-content: flex-start;
 }
-/* removed height: auto and float left*/
-.main-image {
 	
 	
-}
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
@@ -124,7 +130,7 @@ header nav ul li a{
 	
 }
 .main-title h2 {
-	text-align: left;
+	text-align: center;
 	padding: 5px 0;
 	color: #77a466;
 }
@@ -133,13 +139,17 @@ header nav ul li a{
 	padding: 0;
 	font-size: 1em;
 	line-height: 25px;
+
 }
 /* removed height: auto and float: left*/
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	border-top: 1px solid #eee;
+	
+	
+	
 }
 
 .section-one h3 {
@@ -150,10 +160,10 @@ header nav ul li a{
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
-
+/* removed padding 30px and repalced it with a 0*/
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px 0;
 }
 
 .menu {
@@ -164,16 +174,16 @@ header nav ul li a{
 	padding: 10px 0;
 	color:#77a466;
 }
-/* font-size 16px*/
+/* font-size 16px removeed line-height 21px*/
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;
+	
 }
-/* font-size 16px*/
+/* font-size 16px removed line height 24px*/
 .address {
 	font-size: 1em;
-	line-height: 24px;
+	
 }
 
 /*The widths are in a percentage! removed height 50px and margin 0 auto and clear: both*/
@@ -183,8 +193,8 @@ footer {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
-	flex-basis: mid-width;
+	flex-flow: row-wrap;
+	flex-basis: 100%;
 	align-content: flex-start;
 }
 /*font-size 14px*/
