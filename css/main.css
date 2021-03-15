@@ -64,7 +64,7 @@ header {
 	flex-flow: row wrap;
 	flex-basis: 100%;
 	
-	flex-direction: row;
+	flex-direction: column;
 	
 	
 	
@@ -147,6 +147,7 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	border-top: 1px solid #eee;
+	flex-direction: column;
 	
 	
 	
@@ -157,8 +158,8 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 }
 /* removed padding 30px and repalced it with a 0*/
 .section-two h3,
