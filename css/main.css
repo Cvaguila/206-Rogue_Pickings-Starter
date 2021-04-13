@@ -279,8 +279,10 @@ footer span {
 
 header{
 	display: flex;
-	justify-content:left;
+	justify-content:space-between;
 	align-items:baseline;
+	flex-direction: column;
+	flex-flow:row;
 
 }
 header nav ul {
